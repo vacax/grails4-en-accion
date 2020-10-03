@@ -11,9 +11,12 @@ class HolaMundoControllerSpec extends Specification implements ControllerUnitTes
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    /**
+     * Ejemplo de pruebas.
+     */
+    void "pruebaIndex"() {
+        controller.index()
+        assert response.text == "Hola Mundo en Grails :-D" //OK
     }
 
 }
