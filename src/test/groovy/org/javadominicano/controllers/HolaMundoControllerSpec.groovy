@@ -15,6 +15,7 @@ class HolaMundoControllerSpec extends Specification implements ControllerUnitTes
      * Ejemplo de pruebas.
      */
     void "pruebaIndex"() {
+        expect:"Hola Mundo"
         controller.index()
         assert response.text == "Hola Mundo en Grails :-D" //OK
     }
